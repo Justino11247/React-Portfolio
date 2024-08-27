@@ -5,10 +5,10 @@ import Navigation from "./components/NAvigation";
 
 function App() {
   return (
-    <div className="app-container">
+    <div className="body">
       <Header />
       <Navigation />
-      <main className="content-area">
+      <main className="main">
         <Outlet />
       </main>
       <Footer />
