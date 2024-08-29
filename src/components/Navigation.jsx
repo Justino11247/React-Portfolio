@@ -14,11 +14,7 @@ function Navigation() {
   return (
     <Nav variant="tabs" defaultActiveKey="/">
       {navigationItems.map(({ path, label }) => (
-        <NavLink  
-          key={path}
-          to={path}
-          className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}
-        >
+        <NavLink key={path} to={path} className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
           {label}
         </NavLink>
       ))}

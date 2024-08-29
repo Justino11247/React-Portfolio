@@ -19,6 +19,7 @@ function Contact() {
 
     if (!email.trim()) {
       newErrors.email = "Email is required";
+      
     } else if (!validateEmail(email)) {
       newErrors.email = "Invalid email address";
     }
@@ -37,7 +38,7 @@ function Contact() {
       setSubmissionMessage("Your message has been successfully submitted!");
     }
   }
-  
+
 
   // Updates name state, clears any associated error
   function handleNameChange(e) {
