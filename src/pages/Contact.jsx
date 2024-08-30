@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function Contact() {
   // State variables for form inputs, validation errors, and submission feedback
@@ -19,7 +19,7 @@ function Contact() {
 
     if (!email.trim()) {
       newErrors.email = "Email is required";
-      
+
     } else if (!validateEmail(email)) {
       newErrors.email = "Invalid email address";
     }

@@ -1,4 +1,4 @@
-import Project from "../components/project";
+import Project from "../components/pROJECTS.JSX";
 
 
 // Data for each project in the portfolio

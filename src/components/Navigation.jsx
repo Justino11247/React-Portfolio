@@ -1,6 +1,5 @@
 import { Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import "../styles/style.css";
 
 // Navigation items with their corresponding paths and labels
 const navigationItems = [
