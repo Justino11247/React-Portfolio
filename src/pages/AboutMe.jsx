@@ -13,7 +13,7 @@ export default function AboutPage(){
 
   return (
     <Box
-      backgroundImage="./public/images/metalbackground.png"
+      backgroundImage="/images/metalbackground.png"
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundAttachment="fixed"
@@ -32,7 +32,7 @@ export default function AboutPage(){
       overflow="hidden"
     >
       <Image
-        src="./public/images/ME.jpg"
+        src="/images/ME.jpg"
         alt="Picture of me"
         objectFit="cover"
         w="100%"

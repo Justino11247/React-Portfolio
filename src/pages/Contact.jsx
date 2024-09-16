@@ -85,7 +85,7 @@ const borderColor = useColorModeValue("black", "cyan");
 // JSX structure for the contact form
 return (
   <Box
-      backgroundImage="./public/images/metalbackground.png"
+      backgroundImage="/images/metalbackground.png"
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundAttachment="fixed"

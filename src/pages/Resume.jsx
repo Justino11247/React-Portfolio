@@ -18,7 +18,7 @@ function Resume() {
 
   return(
     <Box
-      backgroundImage="./public/images/metalbackground.png"
+      backgroundImage="/images/metalbackground.png"
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundAttachment="fixed"
