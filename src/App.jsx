@@ -2,10 +2,12 @@ import { Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Navigation from "./components/NAvigation";
+import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
   return (
-    <div className="body">
+    <ChakraProvider>
+      <div className="body">
       <Header />
       <Navigation />
       <main className="main">
@@ -13,6 +15,7 @@ function App() {
       </main>
       <Footer />
     </div>
+    </ChakraProvider>
   );
 }
 
