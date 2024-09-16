@@ -26,12 +26,12 @@ To install React-Portfolio:
 
 ## Usage
 
-- Start the application, in the terminal by executing the following command: `npm run start`
+- Start the application, in the terminal by executing the following command: `npm run dev`
 
 - You will be redirected to the application: `http://localhost:3000/`
 <br>
 
-[Link to Deployed Application]()
+[Link to Deployed Application](https://main--chipper-lily-ac02d9.netlify.app/Portfolio)
 
 ![Screenshot of Application](./public/images/portfolioScreenshot.png)
 
