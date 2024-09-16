@@ -6,42 +6,42 @@ import { Box, SimpleGrid, Heading, } from "@chakra-ui/react";
 const projectData = [
   {
     title: "GameChaser",
-    image: "./public/images/gamechaser.png",
+    image: "/images/gamechaser.png",
     projectLink: "https://gamechaser-wlza.onrender.com/",
     githubLink: "https://github.com/haartmuhn/GameChaser",
     projectType: "Group Project"
   },
   {
     title: "Brew Finder",
-    image: "./public/images/brewfinder.png",
+    image: "/images/brewfinder.png",
     projectLink:"https://jordangwiz.github.io/My-Brew-Finder/",
     githubLink:"https://github.com/JordanGWiz/My-Brew-Finder",
     projectType: "Group Project"
   },
   {
     title: "Weather Tracker",
-    image: "./public/images/WeatherTracker.png",
+    image: "/images/WeatherTracker.png",
     projectLink:"https://justino11247.github.io/Weather-Tracker/",
     githubLink:"https://github.com/Justino11247/Weather-Tracker",
     projectType: "Solo Project"
   },
   {
     title: "Dear Diary",
-    image: "./public/images/deardiary.png",
+    image: "/images/deardiary.png",
     projectLink:"https://justino11247.github.io/Challenge4-Dear-Diary/",
     githubLink:"https://github.com/Justino11247/Challenge4-Dear-Diary",
     projectType: "Solo Project"
   },
   {
     title: "Express Note Taker",
-    image: "./public/images/notetaker.png",
+    image: "/images/notetaker.png",
     projectLink:"https://express-note-taker-ze7i.onrender.com/",
     githubLink:"https://github.com/Justino11247/Express-Note-Taker",
     projectType: "Solo Project"
   },
   {
     title: "My Employee Payroll Tracker",
-    image: "./public/images/Payroll-tracker-application.png",
+    image: "/images/Payroll-tracker-application.png",
     projectLink:"https://justino11247.github.io/Challenge3-My-employee-payroll-tracker/",
     githubLink:"https://github.com/Justino11247/Challenge3-My-employee-payroll-tracker",
     projectType: "Solo Project"
@@ -51,7 +51,7 @@ const projectData = [
 const Portfolio = () => {
   return (
     <Box
-      backgroundImage="./public/images/metalbackground.png"
+      backgroundImage="/images/metalbackground.png"
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundAttachment="fixed"
