@@ -1,4 +1,4 @@
-import Projects from "../components/pROJECTS.JSX";
+import Projects from "../components/Projects.jsx";
 import { Box, SimpleGrid, Heading, } from "@chakra-ui/react";
 
 
