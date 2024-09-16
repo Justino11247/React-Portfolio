@@ -1,4 +1,16 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import {
+  Box,
+  VStack,
+  Heading,
+  FormControl,
+  FormLabel,
+  Input,
+  Textarea,
+  Button,
+  Text,
+  useColorModeValue,
+} from "@chakra-ui/react";
 
 function Contact() {
   // State variables for form inputs, validation errors, and submission feedback
@@ -19,7 +31,7 @@ function Contact() {
 
     if (!email.trim()) {
       newErrors.email = "Email is required";
-      
+
     } else if (!validateEmail(email)) {
       newErrors.email = "Invalid email address";
     }
@@ -67,42 +79,102 @@ function Contact() {
     return emailRegex.test(email);
 }
 
-  
+const bgColor = useColorModeValue("white", "gray.700");
+const borderColor = useColorModeValue("black", "cyan");
 
 // JSX structure for the contact form
 return (
-  <div className="">
-    <h1>Contact Me</h1>
+  <Box
+      backgroundImage="./public/images/metalbackground.png"
+      backgroundSize="cover"
+      backgroundPosition="center"
+      backgroundAttachment="fixed"
+      minHeight="100vh"
+      padding={8}
+    >
+  <Box maxWidth="500px" margin="auto" mt={10}>
+    <VStack
+      spacing={6}
+      bg={bgColor}
+      borderWidth="1px"
+      borderColor={borderColor}
+      boxShadow={useColorModeValue("10px 10px 0 #323535", "10px 10px 0 cyan")}
+      borderRadius="sm"
+      p={6}
+    >
+      <Heading as="h1" size="xl">
+        Contact Me
+      </Heading>
 
-    <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} style={{ width: "100%" }}>
+        <VStack spacing={4} align="stretch">
+          <FormControl isInvalid={errors.name}>
+            <FormLabel htmlFor="name">Name</FormLabel>
+            <Input
+              id="name"
+              type="text"
+              value={name}
+              onChange={handleNameChange}
+              required
+            />
+            {errors.name && (
+              <Text color="red.500" fontSize="sm">
+                {errors.name}
+              </Text>
+            )}
+          </FormControl>
 
-      <div>
-        <label htmlFor="name">Name:</label>
-        <input type="text" value={name} onChange={handleNameChange} required className="" />
-        {errors.name && <p className="">{errors.name}</p>}
-      </div>
-      
-      <div>
-        <label htmlFor="email">Email:</label>
-        <input type="email"  value={email} onChange={handleEmailChange} required className="" />
-        {errors.email && <p className="">{errors.email}</p>}
-      </div>
+          <FormControl isInvalid={errors.email}>
+            <FormLabel htmlFor="email">Email</FormLabel>
+            <Input
+              id="email"
+              type="email"
+              value={email}
+              onChange={handleEmailChange}
+              required
+            />
+            {errors.email && (
+              <Text color="red.500" fontSize="sm">
+                {errors.email}
+              </Text>
+            )}
+          </FormControl>
 
-      <div>
-        <label htmlFor="message">Message:</label>
-        <textarea value={message} onChange={handleMessageChange} required className="" ></textarea>
-        {errors.message && <p className="">{errors.message}</p>}
-      </div>
-      {Object.keys(errors).length > 0 && (
-        <p className="">Please complete all required fields.</p>
-      )}
-      {submissionMessage && <p>{submissionMessage}</p>}
+          <FormControl isInvalid={errors.message}>
+            <FormLabel htmlFor="message">Message</FormLabel>
+            <Textarea
+              id="message"
+              value={message}
+              onChange={handleMessageChange}
+              required
+            />
+            {errors.message && (
+              <Text color="red.500" fontSize="sm">
+                {errors.message}
+              </Text>
+            )}
+          </FormControl>
 
-      <button type="submit" className="">
-        Submit
-      </button>
-    </form>
-  </div>
+          {Object.keys(errors).length > 0 && (
+            <Text color="red.500" fontSize="sm">
+              Please complete all required fields.
+            </Text>
+          )}
+
+          {submissionMessage && (
+            <Text color="green.500" fontSize="sm">
+              {submissionMessage}
+            </Text>
+          )}
+
+          <Button type="submit" colorScheme="blue">
+            Submit
+          </Button>
+        </VStack>
+      </form>
+    </VStack>
+  </Box>
+  </Box>
 );
 }
 
