@@ -5,6 +5,13 @@ import { Box, SimpleGrid, Heading, } from "@chakra-ui/react";
 // Data for each project in the portfolio
 const projectData = [
   {
+    title: "Papercut Pals",
+    image: "/images/papercutpals.png",
+    projectLink: "https://papercut-pals.onrender.com/",
+    githubLink: "https://github.com/girlnotfound/PAPERCUT-PALS",
+    projectType: "Group Project"
+  },
+  {
     title: "GameChaser",
     image: "/images/gamechaser.png",
     projectLink: "https://gamechaser-wlza.onrender.com/",
