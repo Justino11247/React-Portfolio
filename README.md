@@ -31,7 +31,7 @@ To install React-Portfolio:
 - You will be redirected to the application: `http://localhost:3000/`
 <br>
 
-[Link to Deployed Application](https://main--chipper-lily-ac02d9.netlify.app/Portfolio)
+[Link to Deployed Application](https://main--justins-react-portfolio.netlify.app/)
 
 ![Screenshot of Application](./public/images/portfolioScreenshot.png)
 
